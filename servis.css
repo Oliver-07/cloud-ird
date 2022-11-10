@@ -1,0 +1,229 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+h1{ font-size: 3.5em; }
+h2{font-size: 2.77em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+
+}
+header{
+    background-color: rgb(245, 245, 245);
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    font-size: 1.6em;
+    
+}
+
+header.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+ 
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+
+}
+header a:hover{
+    color: blueviolet;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color:white;
+    background-image:  linear-gradient(
+        0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+
+
+
+    )
+    ,url(img/niña.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+
+}
+#hero h1{
+    color: white;
+}
+
+
+#Libros .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+#servicios{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#servicios .container{
+    padding: 100px 12px;
+}
+
+#servicios h2{
+    margin-top: 0;
+font-size: 3.3em;
+}
+
+#servicios p{
+    display: none;
+}
+
+#servicios .carta{
+
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+
+
+
+    )
+    ,url(img/lib10.jpg);
+
+}
+
+.carta:nth-child(2){
+
+    background-image: linear-gradient(
+        0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+
+
+
+    )
+    ,url(img/lib11.jpg);
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+
+
+
+    )
+    ,url(img/lib12.jpg)
+}
+
+@media (min-width: 720px){
+
+    header{
+        position: static;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    header nav{
+        flex-direction: row;
+        padding-right: 20px;
+        
+    }
+    #Libros .container{
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+#Libros .texto{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#libros h2{
+    margin-top: 0;
+    text-align: center;
+}
+
+    #Libros .img-container{
+        background-image:  linear-gradient(
+        0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+
+
+
+    )
+    ,url(img/niña.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+
+    }
+
+    #servicios .programas{
+        display: flex;
+        justify-content: center;
+
+    }
+    #servicios p{
+        display: block;
+
+    }
+
+    #servicios h3{
+        margin-top: 0;
+
+    }
+    #servicios.carta{
+        padding: 15px;
+    }
+   
+}
